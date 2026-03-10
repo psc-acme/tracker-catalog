@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/tracker-catalog",
+    "description": "Package tracker-catalog for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\TrackerCatalog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/lock": "^7.0",
+        "symfony/routing": "^7.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.0",
+        "vimeo/psalm": "^5.0",
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
